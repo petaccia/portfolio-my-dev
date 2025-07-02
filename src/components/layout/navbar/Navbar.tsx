@@ -1,4 +1,5 @@
 import Link from "next/link"
+import NavbarDesktop from "./components/NavbarDesktop"
 
 export default function Navbar() {
   return (
@@ -15,6 +16,7 @@ export default function Navbar() {
             Sébastien Petaccia
           </Link>
         </div>
+        <NavbarDesktop />
       </div>
     </div>
     </nav>
