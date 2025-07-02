@@ -4,6 +4,7 @@ import "./globals.css";
 import { ToastContainer } from "react-toastify";
 import Navbar from "@/components/layout/navbar/Navbar";
 import NavbarMobile from "@/components/layout/navbar/components/NavbarMobile";
+import Footer from "@/components/layout/footer/Footer";
 
 // Police pour les titres
 const roboto = Roboto({
@@ -55,6 +56,7 @@ export default function RootLayout({
         <main className="pt-16 pb-20 md:pb-0">
           {children}
         </main>
+        <Footer />
       <ToastContainer
         position="top-right"
         autoClose={5000}

@@ -1,5 +1,6 @@
 import Link from "next/link"
 import NavbarDesktop from "./components/NavbarDesktop"
+import Logo from "../components/Logo";
 
 export default function Navbar() {
   return (
@@ -7,15 +8,8 @@ export default function Navbar() {
     <div className="container mx-auto px-4">
       <div className="flex items-center justify-between h-16">
         {/* Logo */}
-        <div className="flex-shrink-0">
-          <Link
-            href="/"
-            className="text-secondary font-heading text-xl font-bold"
-
-          >
-            Sébastien Petaccia
-          </Link>
-        </div>
+        <Logo href="/" label="Sébastien Petaccia" />
+        {/* Desktop Navigation */}
         <NavbarDesktop />
       </div>
     </div>
