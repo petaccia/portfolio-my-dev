@@ -3,6 +3,7 @@ import { Roboto, Poppins, Open_Sans, Fira_Code } from "next/font/google";
 import "./globals.css";
 import { ToastContainer } from "react-toastify";
 import Navbar from "@/components/layout/navbar/Navbar";
+import NavbarMobile from "@/components/layout/navbar/components/NavbarMobile";
 
 // Police pour les titres
 const roboto = Roboto({
@@ -50,8 +51,11 @@ export default function RootLayout({
         className={`${roboto.variable} ${poppins.variable} ${openSans.variable} ${firaCode.variable} antialiased`}
       >
         <Navbar />
-        {children}
-      <ToastContainer 
+        <NavbarMobile />
+        <main className="pt-16 pb-20 md:pb-0">
+          {children}
+        </main>
+      <ToastContainer
         position="top-right"
         autoClose={5000}
         hideProgressBar={false}
