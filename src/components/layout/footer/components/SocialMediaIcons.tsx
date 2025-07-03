@@ -2,7 +2,7 @@ import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 
 export default function SocialMediaIcons() {
   return (
-    <div className="flex space-x-4 mt-8">
+    <div className="w-full flex justify-center md:justify-start space-x-4 md:mt-18">
       {/* Social Media Icons */}
       <a
         href="https://github.com/petaccia"
