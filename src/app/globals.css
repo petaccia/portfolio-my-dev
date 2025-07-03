@@ -3,15 +3,39 @@
 @theme {
   /* colors blue */
   --color-primary: #000f1f; /* blue royal */
+  --color-primary-light: #1a2332; /* blue royal plus clair */
+  --color-primary-dark: #000a14; /* blue royal plus foncé */
+
   /* colors orange */
   --color-secondary: #E67E22; /* orange discret */
+  --color-secondary-light: #F39C12; /* orange plus vif */
+  --color-secondary-dark: #D35400; /* orange plus foncé */
 
   /* colors teal - troisième couleur */
   --color-accent: #2ECCC6; /* turquoise/teal */
+  --color-accent-light: #48E5DE; /* teal plus clair */
+  --color-accent-dark: #1BA199; /* teal plus foncé */
 
-  /* colors white */
-  --color-white: #FFFFFF; /* blanc */
+  /* colors white et grays */
+  --color-white: #FFFFFF; /* blanc pur */
+  --color-gray-50: #F8FAFC; /* blanc cassé */
+  --color-gray-100: #F1F5F9; /* gris très clair */
+  --color-gray-200: #E2E8F0; /* gris clair */
+  --color-gray-300: #CBD5E1; /* gris moyen clair */
+  --color-gray-400: #94A3B8; /* gris moyen */
+  --color-gray-500: #64748B; /* gris */
+  --color-gray-600: #475569; /* gris foncé */
+  --color-gray-700: #334155; /* gris très foncé */
+  --color-gray-800: #1E293B; /* gris presque noir */
+  --color-gray-900: #0F172A; /* gris noir */
 
+  /* Text colors harmonieuses */
+  --color-text-primary: #F8FAFC; /* texte principal - blanc cassé */
+  --color-text-secondary: #CBD5E1; /* texte secondaire - gris clair */
+  --color-text-muted: #94A3B8; /* texte discret - gris moyen */
+  --color-text-subtle: #64748B; /* texte très discret - gris */
+  --color-text-accent: #2ECCC6; /* texte d'accent - teal */
+  --color-text-highlight: #E67E22; /* texte de mise en valeur - orange */
 
   /* fonts */
   --font-heading: 'Roboto', sans-serif;
@@ -23,4 +47,21 @@
 
 body {
   @apply w-full h-screen bg-primary;
+}
+
+.animate-gradient {
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
