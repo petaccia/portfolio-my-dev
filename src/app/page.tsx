@@ -1,6 +1,7 @@
 
 // Import Components
 import HeroSection from "@/components/pages/home/section/HeroSection";
+import { ServicesSection } from "@/components/pages/home/servicesSection";
 import { TechnologiesSection } from "@/components/pages/home/technologiesSection";
 
 export default function Home() {
@@ -11,6 +12,9 @@ export default function Home() {
       </div>
       <div>
         <TechnologiesSection />
+      </div>
+      <div>
+        <ServicesSection />
       </div>
     </div>
   );
