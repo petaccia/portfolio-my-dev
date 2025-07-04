@@ -47,11 +47,11 @@ export default function ServiceCard({
               <div className="w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent mb-4"></div>
               <ul className="space-y-2">
                 {features.map((feature, index) => (
-                  <li 
+                  <li
                     key={index}
-                    className="flex items-center text-sm text-text-muted font-body"
+                    className="flex items-center text-sm text-text-muted group-hover:text-primary group-hover:font-semibold transition-colors duration-300"
                   >
-                    <div className="w-1.5 h-1.5 bg-accent rounded-full mr-3 group-hover:bg-secondary transition-colors duration-300"></div>
+                    <div className="w-1.5 h-1.5 bg-accent rounded-full mr-3 transition-colors duration-300"></div>
                     {feature}
                   </li>
                 ))}
