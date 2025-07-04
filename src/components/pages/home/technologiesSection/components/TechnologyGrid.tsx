@@ -1,11 +1,5 @@
-import { IconType } from "react-icons";
+import { Technology } from "@/components/layout/data/technoData";
 import TechnologyCard from "./TechnologyCard";
-
-interface Technology {
-  name: string;
-  color: string;
-  icon: IconType;
-}
 
 interface TechnologyGridProps {
   technologies: Technology[];

@@ -1,10 +1,4 @@
-import { IconType } from "react-icons";
-
-interface Technology {
-  name: string;
-  color: string;
-  icon: IconType;
-}
+import { Technology } from "@/components/layout/data/technoData";
 
 interface TechnologyCardProps {
   technology: Technology;
